@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  instabook
 //
-//  Created by Stas Buldakov on 06/12/2018.
-//  Copyright © 2018 Stas Buldakov. All rights reserved.
+//  Created by Stanislav Buldakov on 07.12.2018.
+//  Copyright © 2018 Stanislav Buldakov. All rights reserved.
 //
 
 import UIKit

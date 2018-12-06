@@ -7,46 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		681F743F21B940B4007D6131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681F743E21B940B4007D6131 /* AppDelegate.swift */; };
-		681F744121B940B4007D6131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681F744021B940B4007D6131 /* ViewController.swift */; };
-		681F744421B940B4007D6131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F744221B940B4007D6131 /* Main.storyboard */; };
-		681F744621B940B6007D6131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681F744521B940B6007D6131 /* Assets.xcassets */; };
-		681F744921B940B6007D6131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F744721B940B6007D6131 /* LaunchScreen.storyboard */; };
-		681F745421B940B7007D6131 /* instabookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681F745321B940B7007D6131 /* instabookUITests.swift */; };
+		CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */; };
+		CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42A21B9C49C00DB3B2F /* ViewController.swift */; };
+		CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42C21B9C49C00DB3B2F /* Main.storyboard */; };
+		CA77D43021B9C49D00DB3B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */; };
+		CA77D43321B9C49D00DB3B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D43121B9C49D00DB3B2F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		681F745021B940B7007D6131 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 681F743321B940B4007D6131 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 681F743A21B940B4007D6131;
-			remoteInfo = instabook;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		681F743B21B940B4007D6131 /* instabook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instabook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		681F743E21B940B4007D6131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		681F744021B940B4007D6131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		681F744321B940B4007D6131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		681F744521B940B6007D6131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		681F744821B940B6007D6131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		681F744A21B940B6007D6131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		681F744F21B940B7007D6131 /* instabookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instabookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		681F745321B940B7007D6131 /* instabookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instabookUITests.swift; sourceTree = "<group>"; };
-		681F745521B940B7007D6131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA77D42521B9C49C00DB3B2F /* instabook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instabook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA77D42A21B9C49C00DB3B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA77D42D21B9C49C00DB3B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA77D43221B9C49D00DB3B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA77D43421B9C49D00DB3B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		681F743821B940B4007D6131 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		681F744C21B940B7007D6131 /* Frameworks */ = {
+		CA77D42221B9C49C00DB3B2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,56 +35,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		681F743221B940B4007D6131 = {
+		CA77D41C21B9C49C00DB3B2F = {
 			isa = PBXGroup;
 			children = (
-				681F743D21B940B4007D6131 /* instabook */,
-				681F745221B940B7007D6131 /* instabookUITests */,
-				681F743C21B940B4007D6131 /* Products */,
+				CA77D42721B9C49C00DB3B2F /* instabook */,
+				CA77D42621B9C49C00DB3B2F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		681F743C21B940B4007D6131 /* Products */ = {
+		CA77D42621B9C49C00DB3B2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				681F743B21B940B4007D6131 /* instabook.app */,
-				681F744F21B940B7007D6131 /* instabookUITests.xctest */,
+				CA77D42521B9C49C00DB3B2F /* instabook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		681F743D21B940B4007D6131 /* instabook */ = {
+		CA77D42721B9C49C00DB3B2F /* instabook */ = {
 			isa = PBXGroup;
 			children = (
-				681F743E21B940B4007D6131 /* AppDelegate.swift */,
-				681F744021B940B4007D6131 /* ViewController.swift */,
-				681F744221B940B4007D6131 /* Main.storyboard */,
-				681F744521B940B6007D6131 /* Assets.xcassets */,
-				681F744721B940B6007D6131 /* LaunchScreen.storyboard */,
-				681F744A21B940B6007D6131 /* Info.plist */,
+				CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */,
+				CA77D42A21B9C49C00DB3B2F /* ViewController.swift */,
+				CA77D42C21B9C49C00DB3B2F /* Main.storyboard */,
+				CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */,
+				CA77D43121B9C49D00DB3B2F /* LaunchScreen.storyboard */,
+				CA77D43421B9C49D00DB3B2F /* Info.plist */,
 			);
 			path = instabook;
-			sourceTree = "<group>";
-		};
-		681F745221B940B7007D6131 /* instabookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				681F745321B940B7007D6131 /* instabookUITests.swift */,
-				681F745521B940B7007D6131 /* Info.plist */,
-			);
-			path = instabookUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		681F743A21B940B4007D6131 /* instabook */ = {
+		CA77D42421B9C49C00DB3B2F /* instabook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 681F745821B940B7007D6131 /* Build configuration list for PBXNativeTarget "instabook" */;
+			buildConfigurationList = CA77D43721B9C49D00DB3B2F /* Build configuration list for PBXNativeTarget "instabook" */;
 			buildPhases = (
-				681F743721B940B4007D6131 /* Sources */,
-				681F743821B940B4007D6131 /* Frameworks */,
-				681F743921B940B4007D6131 /* Resources */,
+				CA77D42121B9C49C00DB3B2F /* Sources */,
+				CA77D42221B9C49C00DB3B2F /* Frameworks */,
+				CA77D42321B9C49C00DB3B2F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -113,47 +81,25 @@
 			);
 			name = instabook;
 			productName = instabook;
-			productReference = 681F743B21B940B4007D6131 /* instabook.app */;
+			productReference = CA77D42521B9C49C00DB3B2F /* instabook.app */;
 			productType = "com.apple.product-type.application";
-		};
-		681F744E21B940B7007D6131 /* instabookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 681F745B21B940B7007D6131 /* Build configuration list for PBXNativeTarget "instabookUITests" */;
-			buildPhases = (
-				681F744B21B940B7007D6131 /* Sources */,
-				681F744C21B940B7007D6131 /* Frameworks */,
-				681F744D21B940B7007D6131 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				681F745121B940B7007D6131 /* PBXTargetDependency */,
-			);
-			name = instabookUITests;
-			productName = instabookUITests;
-			productReference = 681F744F21B940B7007D6131 /* instabookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		681F743321B940B4007D6131 /* Project object */ = {
+		CA77D41D21B9C49C00DB3B2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Stas Buldakov";
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Stanislav Buldakov";
 				TargetAttributes = {
-					681F743A21B940B4007D6131 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					681F744E21B940B7007D6131 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 681F743A21B940B4007D6131;
+					CA77D42421B9C49C00DB3B2F = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 681F743621B940B4007D6131 /* Build configuration list for PBXProject "instabook" */;
+			buildConfigurationList = CA77D42021B9C49C00DB3B2F /* Build configuration list for PBXProject "instabook" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,78 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 681F743221B940B4007D6131;
-			productRefGroup = 681F743C21B940B4007D6131 /* Products */;
+			mainGroup = CA77D41C21B9C49C00DB3B2F;
+			productRefGroup = CA77D42621B9C49C00DB3B2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				681F743A21B940B4007D6131 /* instabook */,
-				681F744E21B940B7007D6131 /* instabookUITests */,
+				CA77D42421B9C49C00DB3B2F /* instabook */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		681F743921B940B4007D6131 /* Resources */ = {
+		CA77D42321B9C49C00DB3B2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681F744921B940B6007D6131 /* LaunchScreen.storyboard in Resources */,
-				681F744621B940B6007D6131 /* Assets.xcassets in Resources */,
-				681F744421B940B4007D6131 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		681F744D21B940B7007D6131 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CA77D43321B9C49D00DB3B2F /* LaunchScreen.storyboard in Resources */,
+				CA77D43021B9C49D00DB3B2F /* Assets.xcassets in Resources */,
+				CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		681F743721B940B4007D6131 /* Sources */ = {
+		CA77D42121B9C49C00DB3B2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681F744121B940B4007D6131 /* ViewController.swift in Sources */,
-				681F743F21B940B4007D6131 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		681F744B21B940B7007D6131 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				681F745421B940B7007D6131 /* instabookUITests.swift in Sources */,
+				CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */,
+				CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		681F745121B940B7007D6131 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 681F743A21B940B4007D6131 /* instabook */;
-			targetProxy = 681F745021B940B7007D6131 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		681F744221B940B4007D6131 /* Main.storyboard */ = {
+		CA77D42C21B9C49C00DB3B2F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				681F744321B940B4007D6131 /* Base */,
+				CA77D42D21B9C49C00DB3B2F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		681F744721B940B6007D6131 /* LaunchScreen.storyboard */ = {
+		CA77D43121B9C49D00DB3B2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				681F744821B940B6007D6131 /* Base */,
+				CA77D43221B9C49D00DB3B2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -240,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		681F745621B940B7007D6131 /* Debug */ = {
+		CA77D43521B9C49D00DB3B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -301,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		681F745721B940B7007D6131 /* Release */ = {
+		CA77D43621B9C49D00DB3B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -356,12 +278,11 @@
 			};
 			name = Release;
 		};
-		681F745921B940B7007D6131 /* Debug */ = {
+		CA77D43821B9C49D00DB3B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9J5GR3S4T;
 				INFOPLIST_FILE = instabook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,12 +295,11 @@
 			};
 			name = Debug;
 		};
-		681F745A21B940B7007D6131 /* Release */ = {
+		CA77D43921B9C49D00DB3B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9J5GR3S4T;
 				INFOPLIST_FILE = instabook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,78 +309,31 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		681F745C21B940B7007D6131 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = instabookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instabook.instabookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = instabook;
-			};
-			name = Debug;
-		};
-		681F745D21B940B7007D6131 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = instabookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instabook.instabookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = instabook;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		681F743621B940B4007D6131 /* Build configuration list for PBXProject "instabook" */ = {
+		CA77D42021B9C49C00DB3B2F /* Build configuration list for PBXProject "instabook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				681F745621B940B7007D6131 /* Debug */,
-				681F745721B940B7007D6131 /* Release */,
+				CA77D43521B9C49D00DB3B2F /* Debug */,
+				CA77D43621B9C49D00DB3B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		681F745821B940B7007D6131 /* Build configuration list for PBXNativeTarget "instabook" */ = {
+		CA77D43721B9C49D00DB3B2F /* Build configuration list for PBXNativeTarget "instabook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				681F745921B940B7007D6131 /* Debug */,
-				681F745A21B940B7007D6131 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		681F745B21B940B7007D6131 /* Build configuration list for PBXNativeTarget "instabookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				681F745C21B940B7007D6131 /* Debug */,
-				681F745D21B940B7007D6131 /* Release */,
+				CA77D43821B9C49D00DB3B2F /* Debug */,
+				CA77D43921B9C49D00DB3B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 681F743321B940B4007D6131 /* Project object */;
+	rootObject = CA77D41D21B9C49C00DB3B2F /* Project object */;
 }
