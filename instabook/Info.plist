@@ -41,5 +41,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MuseoSansCyrl_100.otf</string>
+		<string>MuseoSansCyrl_300.otf</string>
+		<string>MuseoSansCyrl_500.otf</string>
+		<string>MuseoSansCyrl_700.otf</string>
+		<string>MuseoSansCyrl_900.otf</string>
+	</array>
 </dict>
 </plist>

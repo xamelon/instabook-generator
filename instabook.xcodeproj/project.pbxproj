@@ -12,6 +12,20 @@
 		CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42C21B9C49C00DB3B2F /* Main.storyboard */; };
 		CA77D43021B9C49D00DB3B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */; };
 		CA77D43321B9C49D00DB3B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D43121B9C49D00DB3B2F /* LaunchScreen.storyboard */; };
+		CA77D43B21B9C4BB00DB3B2F /* PageCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D43A21B9C4BB00DB3B2F /* PageCreator.swift */; };
+		CA77D45121B9E34500DB3B2F /* MuseoSansCyrl_100.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44721B9E34500DB3B2F /* MuseoSansCyrl_100.otf */; };
+		CA77D45221B9E34500DB3B2F /* MuseoSansCyrl_500_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44821B9E34500DB3B2F /* MuseoSansCyrl_500_Italic.otf */; };
+		CA77D45321B9E34500DB3B2F /* MuseoSansCyrl_900_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44921B9E34500DB3B2F /* MuseoSansCyrl_900_Italic.otf */; };
+		CA77D45421B9E34500DB3B2F /* MuseoSansCyrl_100_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44A21B9E34500DB3B2F /* MuseoSansCyrl_100_Italic.otf */; };
+		CA77D45521B9E34500DB3B2F /* MuseoSansCyrl_300_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44B21B9E34500DB3B2F /* MuseoSansCyrl_300_Italic.otf */; };
+		CA77D45621B9E34500DB3B2F /* MuseoSansCyrl_700_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44C21B9E34500DB3B2F /* MuseoSansCyrl_700_Italic.otf */; };
+		CA77D45721B9E34500DB3B2F /* MuseoSansCyrl_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44D21B9E34500DB3B2F /* MuseoSansCyrl_700.otf */; };
+		CA77D45821B9E34500DB3B2F /* MuseoSansCyrl_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44E21B9E34500DB3B2F /* MuseoSansCyrl_900.otf */; };
+		CA77D45921B9E34500DB3B2F /* MuseoSansCyrl_300.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D44F21B9E34500DB3B2F /* MuseoSansCyrl_300.otf */; };
+		CA77D45A21B9E34500DB3B2F /* MuseoSansCyrl_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45021B9E34500DB3B2F /* MuseoSansCyrl_500.otf */; };
+		CA77D45C21B9F1FB00DB3B2F /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45B21B9F1FB00DB3B2F /* source.json */; };
+		CA77D45E21BA0CB000DB3B2F /* instabook_title.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45D21BA0CB000DB3B2F /* instabook_title.png */; };
+		CA77D46021BA0FC200DB3B2F /* instabook_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45F21BA0FC200DB3B2F /* instabook_back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +36,20 @@
 		CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA77D43221B9C49D00DB3B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA77D43421B9C49D00DB3B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA77D43A21B9C4BB00DB3B2F /* PageCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCreator.swift; sourceTree = "<group>"; };
+		CA77D44721B9E34500DB3B2F /* MuseoSansCyrl_100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_100.otf; sourceTree = "<group>"; };
+		CA77D44821B9E34500DB3B2F /* MuseoSansCyrl_500_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_500_Italic.otf; sourceTree = "<group>"; };
+		CA77D44921B9E34500DB3B2F /* MuseoSansCyrl_900_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_900_Italic.otf; sourceTree = "<group>"; };
+		CA77D44A21B9E34500DB3B2F /* MuseoSansCyrl_100_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_100_Italic.otf; sourceTree = "<group>"; };
+		CA77D44B21B9E34500DB3B2F /* MuseoSansCyrl_300_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_300_Italic.otf; sourceTree = "<group>"; };
+		CA77D44C21B9E34500DB3B2F /* MuseoSansCyrl_700_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_700_Italic.otf; sourceTree = "<group>"; };
+		CA77D44D21B9E34500DB3B2F /* MuseoSansCyrl_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_700.otf; sourceTree = "<group>"; };
+		CA77D44E21B9E34500DB3B2F /* MuseoSansCyrl_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_900.otf; sourceTree = "<group>"; };
+		CA77D44F21B9E34500DB3B2F /* MuseoSansCyrl_300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_300.otf; sourceTree = "<group>"; };
+		CA77D45021B9E34500DB3B2F /* MuseoSansCyrl_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSansCyrl_500.otf; sourceTree = "<group>"; };
+		CA77D45B21B9F1FB00DB3B2F /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		CA77D45D21BA0CB000DB3B2F /* instabook_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instabook_title.png; sourceTree = "<group>"; };
+		CA77D45F21BA0FC200DB3B2F /* instabook_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instabook_back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +84,34 @@
 			children = (
 				CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */,
 				CA77D42A21B9C49C00DB3B2F /* ViewController.swift */,
+				CA77D43A21B9C4BB00DB3B2F /* PageCreator.swift */,
 				CA77D42C21B9C49C00DB3B2F /* Main.storyboard */,
 				CA77D42F21B9C49D00DB3B2F /* Assets.xcassets */,
 				CA77D43121B9C49D00DB3B2F /* LaunchScreen.storyboard */,
 				CA77D43421B9C49D00DB3B2F /* Info.plist */,
+				CA77D43C21B9E14A00DB3B2F /* Resources */,
 			);
 			path = instabook;
+			sourceTree = "<group>";
+		};
+		CA77D43C21B9E14A00DB3B2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA77D44A21B9E34500DB3B2F /* MuseoSansCyrl_100_Italic.otf */,
+				CA77D44721B9E34500DB3B2F /* MuseoSansCyrl_100.otf */,
+				CA77D44B21B9E34500DB3B2F /* MuseoSansCyrl_300_Italic.otf */,
+				CA77D44F21B9E34500DB3B2F /* MuseoSansCyrl_300.otf */,
+				CA77D44821B9E34500DB3B2F /* MuseoSansCyrl_500_Italic.otf */,
+				CA77D45021B9E34500DB3B2F /* MuseoSansCyrl_500.otf */,
+				CA77D44C21B9E34500DB3B2F /* MuseoSansCyrl_700_Italic.otf */,
+				CA77D44D21B9E34500DB3B2F /* MuseoSansCyrl_700.otf */,
+				CA77D44921B9E34500DB3B2F /* MuseoSansCyrl_900_Italic.otf */,
+				CA77D44E21B9E34500DB3B2F /* MuseoSansCyrl_900.otf */,
+				CA77D45F21BA0FC200DB3B2F /* instabook_back.png */,
+				CA77D45D21BA0CB000DB3B2F /* instabook_title.png */,
+				CA77D45B21B9F1FB00DB3B2F /* source.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +172,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA77D45A21B9E34500DB3B2F /* MuseoSansCyrl_500.otf in Resources */,
+				CA77D45421B9E34500DB3B2F /* MuseoSansCyrl_100_Italic.otf in Resources */,
+				CA77D45121B9E34500DB3B2F /* MuseoSansCyrl_100.otf in Resources */,
+				CA77D45521B9E34500DB3B2F /* MuseoSansCyrl_300_Italic.otf in Resources */,
+				CA77D45621B9E34500DB3B2F /* MuseoSansCyrl_700_Italic.otf in Resources */,
+				CA77D45221B9E34500DB3B2F /* MuseoSansCyrl_500_Italic.otf in Resources */,
+				CA77D45821B9E34500DB3B2F /* MuseoSansCyrl_900.otf in Resources */,
+				CA77D45E21BA0CB000DB3B2F /* instabook_title.png in Resources */,
+				CA77D45921B9E34500DB3B2F /* MuseoSansCyrl_300.otf in Resources */,
+				CA77D45321B9E34500DB3B2F /* MuseoSansCyrl_900_Italic.otf in Resources */,
 				CA77D43321B9C49D00DB3B2F /* LaunchScreen.storyboard in Resources */,
+				CA77D45C21B9F1FB00DB3B2F /* source.json in Resources */,
 				CA77D43021B9C49D00DB3B2F /* Assets.xcassets in Resources */,
+				CA77D45721B9E34500DB3B2F /* MuseoSansCyrl_700.otf in Resources */,
 				CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */,
+				CA77D46021BA0FC200DB3B2F /* instabook_back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA77D43B21B9C4BB00DB3B2F /* PageCreator.swift in Sources */,
 				CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */,
 				CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +347,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9J5GR3S4T;
 				INFOPLIST_FILE = instabook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +366,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9J5GR3S4T;
 				INFOPLIST_FILE = instabook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
