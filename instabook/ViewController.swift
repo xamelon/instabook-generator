@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         let dict = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
         var array = dict as! [[String:Any]]
         print(dict)
-        //PageCreator.createLargeFirstPage(array)
-        PageCreator.createDocument()
+        PageCreator.createLargeFirstPage(array)
+        /* PageCreator.createDocument()
         
         //PageCreator.createFirstPage(Array(array[0...82]))
         var i = 0;
@@ -38,16 +38,21 @@ class ViewController: UIViewController {
             
             let text = d["Text"] as! String
             let likes = d["Likes"] as! Int
-            let timestamp = d["Date"] as! Int
+            var timestamp = d["Date"] as! Int
+            var time = String(format: "%lld", timestamp);
+            var index = time.index(time.startIndex, offsetBy: 10);
+            time = String(time[..<index]);
+            timestamp = Int(time)!;
+            
             let imageURL = d["ImageURL"] as! String
             PageCreator.createPage(withText: text, imageURL: imageURL, likes: likes, timestamp: timestamp)
             i = i+1;
-            if(i > 49) {
+            if(i > 49 ) {
                 break
             }
         }
         //PageCreator.createLastPage(Array(array[82...164]))
-        PageCreator.closeDocument()
+        PageCreator.closeDocument() */
         
         print("End generating pdf") 
     }

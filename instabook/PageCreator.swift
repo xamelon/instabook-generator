@@ -130,9 +130,10 @@ class PageCreator: NSObject {
         let startPoint = CGPoint(x: 0, y: 0);
         let endPoint = CGPoint(x: firstPageWidth, y: firstPageHeight);
         context?.drawLinearGradient(gradient!, start: startPoint, end: endPoint, options: []);
-        var leftOffset = 20 * multiplicator;
-        var topOffset = 20 * multiplicator;
-        let tileSize = (150 * multiplicator) / 9
+        var leftOffset = 12 * multiplicator;
+        var topOffset = 16 * multiplicator;
+        let tileSize = (158 * multiplicator) / 5
+        let _tileSize = (158 * multiplicator) / 9
         var j: CGFloat = 0.0;
         var i: CGFloat = 0.0;
         for d in posts {
@@ -145,10 +146,10 @@ class PageCreator: NSObject {
             let image = UIImage(data: data!);
             let newImage = PageCreator.imageScaledToSize(CGSize(width: tileSize, height: tileSize), image: image!)
             UIGraphicsPushContext(context!)
-            if(i >= 9) {
-                leftOffset = 20 * multiplicator + 10 * multiplicator;
+            if(i >= 5) {
+                leftOffset = 12 * multiplicator + 10 * multiplicator;
             } else {
-                leftOffset = 20 * multiplicator
+                leftOffset = 12 * multiplicator
             }
             //context?.draw(image!.cgImage!, in: );
             newImage.draw(in: CGRect(x: tileSize*i + leftOffset, y: tileSize*j+topOffset, width: tileSize, height: tileSize),
@@ -159,7 +160,7 @@ class PageCreator: NSObject {
             print("First page: ", i, j);
             i = i+1
             
-            if i > 17 {
+            if i > 9 {
                 j = j+1
                 i = 0
             }
@@ -170,7 +171,7 @@ class PageCreator: NSObject {
         
         let nt = Bundle.main.path(forResource: "instabook_title", ofType: "png")
         let image = UIImage(contentsOfFile: nt!);
-        image?.draw(in: CGRect(x: (30 * multiplicator) + tileSize * 10, y: tileSize * 2 + topOffset, width: tileSize * 7, height: tileSize * 5),
+        image?.draw(in: CGRect(x: leftOffset + 10 * multiplicator + _tileSize * 9.5, y: _tileSize * 2 + topOffset, width: _tileSize * 7, height: _tileSize * 5),
                     blendMode: .screen,
                     alpha: 1.0);
         
@@ -314,7 +315,7 @@ class PageCreator: NSObject {
             newSize.height = image.size.height
         } else {
             newSize.width = image.size.width
-            newSize.height = image.size.height
+            newSize.height = image.size.width
         }
         
         let cgImage = image.cgImage!
