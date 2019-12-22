@@ -1,0 +1,24 @@
+PODS:
+  - CenteredCollectionView (2.2.1)
+  - Nuke (7.5.2)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - CenteredCollectionView
+  - Nuke
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CenteredCollectionView
+    - Nuke
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: b47fe0455cec239063d0ea17d408fc16cf46cf11
+
+COCOAPODS: 1.8.4

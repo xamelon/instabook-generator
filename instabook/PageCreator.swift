@@ -25,7 +25,6 @@ class PageCreator: NSObject {
         let str = NSAttributedString(string: text, attributes: [
             .font: UIFont(name: "MuseoSansCyrl-300", size: 10.0)!,
             .foregroundColor: UIColor.black,
-            //NSAttributedString.Key.paragraphStyle: paragraphStyle
             ])
         
         let timestamp: TimeInterval = TimeInterval(timestamp)
