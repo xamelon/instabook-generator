@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A039AED5078383F8B757293 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBA08D01D76FA43FFA20D6B /* SinglePostViewController.swift */; };
+		136B95454431B0B0430E4C5E /* SinglePostViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7541CB3FA31C9C4A9CCDC5 /* SinglePostViewInput.swift */; };
+		4C31966C2673B85F4E60FBFF /* SinglePostViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C3B90E0106CAD9C27C498 /* SinglePostViewOutput.swift */; };
 		6816FF7623971BB7004E6F16 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816FF7523971BB7004E6F16 /* UIFont+Extensions.swift */; };
 		6816FF7823971E7E004E6F16 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816FF7723971E7E004E6F16 /* String+Extensions.swift */; };
 		6831DC4123B00BA7008F450F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6831DC4023B00BA7008F450F /* Constants.swift */; };
 		6832B78623B0144600F49FAC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832B78523B0144600F49FAC /* Date+Extensions.swift */; };
-		6832B78923B041D200F49FAC /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832B78823B041D200F49FAC /* SinglePostViewController.swift */; };
 		6880EDA823B002F500DA3F85 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880EDA723B002F500DA3F85 /* PageCollectionViewCell.swift */; };
 		68AF33622395C9B60007BE65 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF33612395C9B60007BE65 /* Post.swift */; };
 		68CE767023B158AC00D2B19A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE766F23B158AC00D2B19A /* ServiceLocator.swift */; };
+		68CE767323B1657800D2B19A /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE767223B1657800D2B19A /* ModuleTransitionable.swift */; };
+		68CE767523B1774900D2B19A /* CarouselRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE767423B1774900D2B19A /* CarouselRouter.swift */; };
 		68E5C43523A5106500EC2817 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43423A5106500EC2817 /* ApiClient.swift */; };
 		68E5C43823A5112600EC2817 /* ApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43723A5112600EC2817 /* ApiClientMock.swift */; };
 		68E5C43B23A5129A00EC2817 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */; };
 		68E5C43D23A512C500EC2817 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43C23A512C500EC2817 /* CarouselModel.swift */; };
 		68E5C43F23A512FA00EC2817 /* CarouselPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */; };
+		6E4E672AF55F466C27F5E6A5 /* SinglePostRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FAB845A5B61D30685086C3 /* SinglePostRouterInput.swift */; };
 		6FE017454499139C3894C4AF /* Pods_instabook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9883992246293697609E3B /* Pods_instabook.framework */; };
+		77A909D8D7267E94AE73070F /* SinglePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4214795076D0260AD5261BE /* SinglePostPresenter.swift */; };
+		B2F2D4504FD10C05592B7475 /* SinglePostModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6325AB0A74B0992FCEC16 /* SinglePostModuleInput.swift */; };
+		B46AFFDB718D9F43CF3D84AF /* SinglePostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6EA139120F4D4E01183A1 /* SinglePostRouter.swift */; };
 		CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */; };
 		CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42A21B9C49C00DB3B2F /* ViewController.swift */; };
 		CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42C21B9C49C00DB3B2F /* Main.storyboard */; };
@@ -40,24 +48,31 @@
 		CA77D45C21B9F1FB00DB3B2F /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45B21B9F1FB00DB3B2F /* source.json */; };
 		CA77D45E21BA0CB000DB3B2F /* instabook_title.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45D21BA0CB000DB3B2F /* instabook_title.png */; };
 		CA77D46021BA0FC200DB3B2F /* instabook_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45F21BA0FC200DB3B2F /* instabook_back.png */; };
+		F7CC590AB7D8268D52374CA4 /* SinglePostModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98B0217C2425B44927A15AF /* SinglePostModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C55C081C7A1FF21F666F53F /* Pods-instabook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instabook.debug.xcconfig"; path = "Target Support Files/Pods-instabook/Pods-instabook.debug.xcconfig"; sourceTree = "<group>"; };
 		1A9883992246293697609E3B /* Pods_instabook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instabook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8C3B90E0106CAD9C27C498 /* SinglePostViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostViewOutput.swift; sourceTree = "<group>"; };
+		2CA6EA139120F4D4E01183A1 /* SinglePostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostRouter.swift; sourceTree = "<group>"; };
 		6816FF7523971BB7004E6F16 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		6816FF7723971E7E004E6F16 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		6831DC4023B00BA7008F450F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6832B78523B0144600F49FAC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		6832B78823B041D200F49FAC /* SinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		6880EDA723B002F500DA3F85 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AF33612395C9B60007BE65 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68CE766F23B158AC00D2B19A /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		68CE767223B1657800D2B19A /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		68CE767423B1774900D2B19A /* CarouselRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselRouter.swift; sourceTree = "<group>"; };
 		68E5C43423A5106500EC2817 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		68E5C43723A5112600EC2817 /* ApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientMock.swift; sourceTree = "<group>"; };
 		68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		68E5C43C23A512C500EC2817 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
 		68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPresenter.swift; sourceTree = "<group>"; };
+		B4214795076D0260AD5261BE /* SinglePostPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostPresenter.swift; sourceTree = "<group>"; };
+		BC7541CB3FA31C9C4A9CCDC5 /* SinglePostViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostViewInput.swift; sourceTree = "<group>"; };
+		C7C6325AB0A74B0992FCEC16 /* SinglePostModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostModuleInput.swift; sourceTree = "<group>"; };
 		CA77D42521B9C49C00DB3B2F /* instabook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instabook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA77D42A21B9C49C00DB3B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +94,10 @@
 		CA77D45B21B9F1FB00DB3B2F /* source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
 		CA77D45D21BA0CB000DB3B2F /* instabook_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instabook_title.png; sourceTree = "<group>"; };
 		CA77D45F21BA0FC200DB3B2F /* instabook_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instabook_back.png; sourceTree = "<group>"; };
+		DBBA08D01D76FA43FFA20D6B /* SinglePostViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		E7BA4E2BDBF0F239EEE8A9E6 /* Pods-instabook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instabook.release.xcconfig"; path = "Target Support Files/Pods-instabook/Pods-instabook.release.xcconfig"; sourceTree = "<group>"; };
+		F1FAB845A5B61D30685086C3 /* SinglePostRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostRouterInput.swift; sourceTree = "<group>"; };
+		F98B0217C2425B44927A15AF /* SinglePostModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostModuleOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +120,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		33459C406C813177EB5D2092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBBA08D01D76FA43FFA20D6B /* SinglePostViewController.swift */,
+				BC7541CB3FA31C9C4A9CCDC5 /* SinglePostViewInput.swift */,
+				2B8C3B90E0106CAD9C27C498 /* SinglePostViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48EF56D82A397C2A1C1E6456 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,14 +137,6 @@
 				E7BA4E2BDBF0F239EEE8A9E6 /* Pods-instabook.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		6832B78723B041B900F49FAC /* SinglePost */ = {
-			isa = PBXGroup;
-			children = (
-				6832B78823B041D200F49FAC /* SinglePostViewController.swift */,
-			);
-			path = SinglePost;
 			sourceTree = "<group>";
 		};
 		6880EDA623B002D300DA3F85 /* Views */ = {
@@ -138,8 +158,9 @@
 		68AF33632395CD310007BE65 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6832B78723B041B900F49FAC /* SinglePost */,
+				68CE767123B1655700D2B19A /* Base */,
 				68E5C43923A5128D00EC2817 /* Carousel */,
+				6F01B49D8CC29E190BE36763 /* SinglePost */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -160,6 +181,14 @@
 				68CE766F23B158AC00D2B19A /* ServiceLocator.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		68CE767123B1655700D2B19A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				68CE767223B1657800D2B19A /* ModuleTransitionable.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		68E5C43323A5105300EC2817 /* Networking */ = {
@@ -184,10 +213,40 @@
 			children = (
 				6880EDA623B002D300DA3F85 /* Views */,
 				68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */,
+				68CE767423B1774900D2B19A /* CarouselRouter.swift */,
 				68E5C43C23A512C500EC2817 /* CarouselModel.swift */,
 				68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		6F01B49D8CC29E190BE36763 /* SinglePost */ = {
+			isa = PBXGroup;
+			children = (
+				8431697EF054868E91673EAA /* Router */,
+				96BEE38D316FB9D8D52980DA /* Presenter */,
+				33459C406C813177EB5D2092 /* View */,
+			);
+			path = SinglePost;
+			sourceTree = "<group>";
+		};
+		8431697EF054868E91673EAA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2CA6EA139120F4D4E01183A1 /* SinglePostRouter.swift */,
+				F1FAB845A5B61D30685086C3 /* SinglePostRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		96BEE38D316FB9D8D52980DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4214795076D0260AD5261BE /* SinglePostPresenter.swift */,
+				C7C6325AB0A74B0992FCEC16 /* SinglePostModuleInput.swift */,
+				F98B0217C2425B44927A15AF /* SinglePostModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CA77D41C21B9C49C00DB3B2F = {
@@ -377,9 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6832B78923B041D200F49FAC /* SinglePostViewController.swift in Sources */,
 				68E5C43B23A5129A00EC2817 /* CarouselViewController.swift in Sources */,
 				68AF33622395C9B60007BE65 /* Post.swift in Sources */,
+				68CE767323B1657800D2B19A /* ModuleTransitionable.swift in Sources */,
 				68E5C43523A5106500EC2817 /* ApiClient.swift in Sources */,
 				68CE767023B158AC00D2B19A /* ServiceLocator.swift in Sources */,
 				68E5C43823A5112600EC2817 /* ApiClientMock.swift in Sources */,
@@ -392,7 +451,16 @@
 				CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */,
 				CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */,
 				6816FF7623971BB7004E6F16 /* UIFont+Extensions.swift in Sources */,
+				68CE767523B1774900D2B19A /* CarouselRouter.swift in Sources */,
 				6880EDA823B002F500DA3F85 /* PageCollectionViewCell.swift in Sources */,
+				B46AFFDB718D9F43CF3D84AF /* SinglePostRouter.swift in Sources */,
+				6E4E672AF55F466C27F5E6A5 /* SinglePostRouterInput.swift in Sources */,
+				77A909D8D7267E94AE73070F /* SinglePostPresenter.swift in Sources */,
+				B2F2D4504FD10C05592B7475 /* SinglePostModuleInput.swift in Sources */,
+				F7CC590AB7D8268D52374CA4 /* SinglePostModuleOutput.swift in Sources */,
+				0A039AED5078383F8B757293 /* SinglePostViewController.swift in Sources */,
+				136B95454431B0B0430E4C5E /* SinglePostViewInput.swift in Sources */,
+				4C31966C2673B85F4E60FBFF /* SinglePostViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

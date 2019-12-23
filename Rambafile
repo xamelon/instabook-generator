@@ -1,0 +1,28 @@
+### Headers settings
+company: Instabook
+
+### Xcode project settings
+project_name: instabook-generator
+xcodeproj_path: instabook.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: instabook
+
+# The file path for new modules
+project_file_path: instabook/Modules
+
+# The Xcode group path to new modules
+project_group_path: instabook/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+catalogs:
+- 'https://github.com/surfstudio/generamba-templates'
+
+### Templates
+templates:
+- {name: surf_mvp_module}
+- {name: mvp, local: 'Templates/mvp'}
+

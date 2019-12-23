@@ -44,4 +44,5 @@ class CarouselPresenter: CarouselViewOutput {
     func getPostsCount() -> Int {
         return posts.count
     }
+    
 }

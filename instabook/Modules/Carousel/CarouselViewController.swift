@@ -15,6 +15,8 @@ protocol CarouselViewOutput: class {
     func viewDidLoad()
     func getPost(atIndex index: Int) -> Post?
     func getPostsCount() -> Int
+    
+    func showPost(atIndex index: Int)
 }
 
 protocol CarouselViewInput: class {
@@ -23,7 +25,7 @@ protocol CarouselViewInput: class {
     
 }
 
-class CarouselViewController: UIViewController, CarouselViewInput {
+class CarouselViewController: UIViewController, CarouselViewInput, ModuleTransitionable {
     var collectionView: UICollectionView!
     var presenter: CarouselViewOutput!
     
@@ -86,6 +88,12 @@ class CarouselViewController: UIViewController, CarouselViewInput {
     
     func configure() {
         self.collectionView.reloadData()
+    }
+    
+    // MARK: - Selectors
+    @objc func tapOnEdit() {
+        
+        
     }
     
 }
