@@ -13,7 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        ServiceLocator.registerModules()
+        
+        guard let controller = ServiceLocator.getCarousel() as? CarouselViewController else {
+            return true
+        }
+        
+        let window = UIWindow()
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
+        self.window = window
+        
         return true
     }
 

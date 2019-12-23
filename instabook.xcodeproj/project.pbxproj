@@ -11,8 +11,10 @@
 		6816FF7823971E7E004E6F16 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816FF7723971E7E004E6F16 /* String+Extensions.swift */; };
 		6831DC4123B00BA7008F450F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6831DC4023B00BA7008F450F /* Constants.swift */; };
 		6832B78623B0144600F49FAC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832B78523B0144600F49FAC /* Date+Extensions.swift */; };
+		6832B78923B041D200F49FAC /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832B78823B041D200F49FAC /* SinglePostViewController.swift */; };
 		6880EDA823B002F500DA3F85 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880EDA723B002F500DA3F85 /* PageCollectionViewCell.swift */; };
 		68AF33622395C9B60007BE65 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF33612395C9B60007BE65 /* Post.swift */; };
+		68CE767023B158AC00D2B19A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE766F23B158AC00D2B19A /* ServiceLocator.swift */; };
 		68E5C43523A5106500EC2817 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43423A5106500EC2817 /* ApiClient.swift */; };
 		68E5C43823A5112600EC2817 /* ApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43723A5112600EC2817 /* ApiClientMock.swift */; };
 		68E5C43B23A5129A00EC2817 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */; };
@@ -47,8 +49,10 @@
 		6816FF7723971E7E004E6F16 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		6831DC4023B00BA7008F450F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6832B78523B0144600F49FAC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		6832B78823B041D200F49FAC /* SinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		6880EDA723B002F500DA3F85 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AF33612395C9B60007BE65 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		68CE766F23B158AC00D2B19A /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		68E5C43423A5106500EC2817 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		68E5C43723A5112600EC2817 /* ApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientMock.swift; sourceTree = "<group>"; };
 		68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6832B78723B041B900F49FAC /* SinglePost */ = {
+			isa = PBXGroup;
+			children = (
+				6832B78823B041D200F49FAC /* SinglePostViewController.swift */,
+			);
+			path = SinglePost;
+			sourceTree = "<group>";
+		};
 		6880EDA623B002D300DA3F85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		68AF33632395CD310007BE65 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6832B78723B041B900F49FAC /* SinglePost */,
 				68E5C43923A5128D00EC2817 /* Carousel */,
 			);
 			path = Modules;
@@ -139,6 +152,14 @@
 				6832B78523B0144600F49FAC /* Date+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68CE766E23B157C100D2B19A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				68CE766F23B158AC00D2B19A /* ServiceLocator.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		68E5C43323A5105300EC2817 /* Networking */ = {
@@ -193,6 +214,7 @@
 				CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */,
 				CA77D42A21B9C49C00DB3B2F /* ViewController.swift */,
 				CA77D43A21B9C4BB00DB3B2F /* PageCreator.swift */,
+				68CE766E23B157C100D2B19A /* Dependencies */,
 				68E5C43323A5105300EC2817 /* Networking */,
 				68AF33632395CD310007BE65 /* Modules */,
 				68AF33602395C9A40007BE65 /* Model */,
@@ -355,9 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6832B78923B041D200F49FAC /* SinglePostViewController.swift in Sources */,
 				68E5C43B23A5129A00EC2817 /* CarouselViewController.swift in Sources */,
 				68AF33622395C9B60007BE65 /* Post.swift in Sources */,
 				68E5C43523A5106500EC2817 /* ApiClient.swift in Sources */,
+				68CE767023B158AC00D2B19A /* ServiceLocator.swift in Sources */,
 				68E5C43823A5112600EC2817 /* ApiClientMock.swift in Sources */,
 				68E5C43D23A512C500EC2817 /* CarouselModel.swift in Sources */,
 				6832B78623B0144600F49FAC /* Date+Extensions.swift in Sources */,
@@ -515,16 +539,18 @@
 			baseConfigurationReference = 0C55C081C7A1FF21F666F53F /* Pods-instabook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9J5GR3S4T;
+				DEVELOPMENT_TEAM = JVAH8GV7XJ;
 				INFOPLIST_FILE = instabook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.instabook.instabook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doska.instabook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -535,8 +561,9 @@
 			baseConfigurationReference = E7BA4E2BDBF0F239EEE8A9E6 /* Pods-instabook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9J5GR3S4T;
+				DEVELOPMENT_TEAM = B8Q88CYQ99;
 				INFOPLIST_FILE = instabook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,6 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.instabook.instabook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

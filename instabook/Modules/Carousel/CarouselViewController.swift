@@ -31,7 +31,6 @@ class CarouselViewController: UIViewController, CarouselViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = CarouselPresenter(model: CarouselModel(), view: self)
         buildView()
         presenter.viewDidLoad()
     }
@@ -60,6 +59,29 @@ class CarouselViewController: UIViewController, CarouselViewInput {
             make.trailing.equalToSuperview()
             make.height.equalToSuperview()
         }
+        
+        let deleteButton = UIButton()
+        deleteButton.setTitle(NSLocalizedString("Delete", comment: ""), for: .normal)
+        deleteButton.titleLabel!.font = UIFont.regularFont(size: 12.0)
+        deleteButton.setTitleColor(UIColor.white, for: .normal)
+        deleteButton.backgroundColor = UIColor.systemRed
+        deleteButton.layer.cornerRadius = 10.0
+        deleteButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5.0, bottom: 0.0, right: 5.0)
+        self.view.addSubview(deleteButton)
+        deleteButton.snp.makeConstraints { (make) in
+            make.trailing.equalToSuperview().offset(-12.0)
+            make.top.equalToSuperview().offset(20.0)
+            make.width.greaterThanOrEqualTo(30)
+        }
+        
+        let editButton = UIButton()
+        editButton.setTitle(NSLocalizedString("Edit", comment: ""), for: .normal)
+        view.addSubview(editButton)
+        editButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-20)
+        }
+        
     }
     
     func configure() {

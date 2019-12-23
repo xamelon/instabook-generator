@@ -10,14 +10,10 @@ import UIKit
 
 class CarouselPresenter: CarouselViewOutput {
 
-    let model: CarouselModelInput
+    var model: CarouselModelInput!
     weak var view: CarouselViewInput!
     var posts: [Post] = []
     
-    init(model: CarouselModelInput, view: CarouselViewInput) {
-        self.model = model
-        self.view = view
-    }
     
     private func getPosts() {
         

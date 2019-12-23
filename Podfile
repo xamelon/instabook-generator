@@ -7,6 +7,7 @@ target 'instabook' do
   pod 'SnapKit'
   pod "CenteredCollectionView"
   pod 'Nuke'
+  pod 'Swinject'
   # Pods for instabook
 
 end
