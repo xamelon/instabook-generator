@@ -19,8 +19,8 @@ final class CarouselRouter: CarouselRouterInput {
     weak var view: ModuleTransitionable?
     
     func openSinglePost(_ post: Post) {
-        let singlePost = ServiceLocator.getSinglePost()
-        view?.showModule(singlePost)
+        let singlePost = ServiceLocator.getSinglePost(withPost: post)
+        view?.presentModule(singlePost, animated: true, completion: nil)
     }
     
 }

@@ -8,4 +8,6 @@
 
 protocol SinglePostViewOutput {
 
+    func viewDidLoad()
+    
 }

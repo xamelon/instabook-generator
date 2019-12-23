@@ -78,6 +78,7 @@ class CarouselViewController: UIViewController, CarouselViewInput, ModuleTransit
         
         let editButton = UIButton()
         editButton.setTitle(NSLocalizedString("Edit", comment: ""), for: .normal)
+        editButton.addTarget(self, action: #selector(tapOnEdit), for: .touchUpInside)
         view.addSubview(editButton)
         editButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
@@ -92,8 +93,11 @@ class CarouselViewController: UIViewController, CarouselViewInput, ModuleTransit
     
     // MARK: - Selectors
     @objc func tapOnEdit() {
+        guard let selectedIndexPath = self.collectionView.indexPathForItem(at: self.view.center) else {
+            return
+        }
         
-        
+        self.presenter.showPost(atIndex: selectedIndexPath.item)
     }
     
 }

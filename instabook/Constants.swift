@@ -18,4 +18,9 @@ struct Constants {
         static let font = UIFont.lightFont(size: 7.0)
     }
     
+    struct Full {
+        static let imageWidth = UIScreen.main.bounds.size.width - 24
+        static let postWidth = Constants.Full.imageWidth / 0.6
+    }
+    
 }

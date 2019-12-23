@@ -9,10 +9,11 @@
 import UIKit
 
 class CarouselPresenter: CarouselViewOutput {
-
+    
     var model: CarouselModelInput!
     weak var view: CarouselViewInput!
     var posts: [Post] = []
+    var router: CarouselRouterInput!
     
     
     private func getPosts() {
@@ -43,6 +44,10 @@ class CarouselPresenter: CarouselViewOutput {
     
     func getPostsCount() -> Int {
         return posts.count
+    }
+    
+    func showPost(atIndex index: Int) {
+        self.router.openSinglePost(self.posts[index])
     }
     
 }

@@ -28,21 +28,25 @@ struct ServiceLocator {
         let presenter = c.resolve(CarouselViewOutput.self) as? CarouselPresenter
         let router = c.resolve(CarouselRouterInput.self) as? CarouselRouter
         
+        
         presenter?.model = model
         presenter?.view = viewController
         viewController?.presenter = presenter
         router?.view = viewController
+        presenter?.router = router
         
         return viewController!
     }
     
-    static func getSinglePost() -> SinglePostViewController {
+    static func getSinglePost(withPost post: Post) -> SinglePostViewController {
         let presenter = c.resolve(SinglePostViewOutput.self) as? SinglePostPresenter
         let view = c.resolve(SinglePostViewInput.self) as? SinglePostViewController
         let router = c.resolve(SinglePostRouterInput.self) as? SinglePostRouter
         
+        view?.modalPresentationStyle = .fullScreen
         presenter?.router = router
         presenter?.view = view
+        presenter?.post = post
         router?.view = view
         view?.output = presenter
         
