@@ -15,5 +15,8 @@ final class SinglePostRouter: SinglePostRouterInput {
     weak var view: ModuleTransitionable?
 
 	// MARK: - SinglePostRouterInput
+    func close() {
+        self.view?.dismissView(animated: true, completion: nil)
+    }
 
 }

@@ -20,6 +20,9 @@ struct ServiceLocator {
         c.register(SinglePostViewInput.self, factory: { _ in SinglePostViewController() } )
         c.register(SinglePostRouterInput.self, factory: { _ in SinglePostRouter() } )
         c.register(SinglePostViewOutput.self, factory: { _ in SinglePostPresenter() })
+        
+        c.register(PostSettingsPanelViewInput.self, factory: { _ in PostSettingsPanelViewController()} )
+        c.register(PostSettingsPanelViewOutput.self, factory: { _ in PostSettingsPanelPresenter() } )
     }
     
     static func getCarousel() -> CarouselViewInput {
@@ -48,6 +51,17 @@ struct ServiceLocator {
         presenter?.view = view
         presenter?.post = post
         router?.view = view
+        view?.output = presenter
+        
+        return view!
+    }
+    
+    static func getPostPanelSettings(withPostPanelSettingsOutput postPanelSettingsOutput: PostSettingsPanelModuleOutput) -> PostSettingsPanelViewController {
+        let presenter = c.resolve(PostSettingsPanelViewOutput.self) as? PostSettingsPanelPresenter
+        let view = c.resolve(PostSettingsPanelViewInput.self) as? PostSettingsPanelViewController
+        
+        presenter?.output = postPanelSettingsOutput
+        presenter?.view = view
         view?.output = presenter
         
         return view!

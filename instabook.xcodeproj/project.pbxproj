@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A039AED5078383F8B757293 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBA08D01D76FA43FFA20D6B /* SinglePostViewController.swift */; };
 		136B95454431B0B0430E4C5E /* SinglePostViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7541CB3FA31C9C4A9CCDC5 /* SinglePostViewInput.swift */; };
+		40C6EA1E3C64D0DCAA5E191A /* PostSettingsPanelViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D4B05708A40FEA205949 /* PostSettingsPanelViewInput.swift */; };
+		416ABCCB184FD8C05E2F9DCB /* PostSettingsPanelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E8DB59C837387650771371 /* PostSettingsPanelPresenter.swift */; };
 		4C31966C2673B85F4E60FBFF /* SinglePostViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C3B90E0106CAD9C27C498 /* SinglePostViewOutput.swift */; };
 		6816FF7623971BB7004E6F16 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816FF7523971BB7004E6F16 /* UIFont+Extensions.swift */; };
 		6816FF7823971E7E004E6F16 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816FF7723971E7E004E6F16 /* String+Extensions.swift */; };
@@ -27,8 +29,10 @@
 		6E4E672AF55F466C27F5E6A5 /* SinglePostRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FAB845A5B61D30685086C3 /* SinglePostRouterInput.swift */; };
 		6FE017454499139C3894C4AF /* Pods_instabook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9883992246293697609E3B /* Pods_instabook.framework */; };
 		77A909D8D7267E94AE73070F /* SinglePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4214795076D0260AD5261BE /* SinglePostPresenter.swift */; };
+		9989C30B0718046E156C9525 /* PostSettingsPanelModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB250266DC047BACD4D1A026 /* PostSettingsPanelModuleOutput.swift */; };
 		B2F2D4504FD10C05592B7475 /* SinglePostModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6325AB0A74B0992FCEC16 /* SinglePostModuleInput.swift */; };
 		B46AFFDB718D9F43CF3D84AF /* SinglePostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6EA139120F4D4E01183A1 /* SinglePostRouter.swift */; };
+		C3B0913169F84EA21181D14B /* PostSettingsPanelModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B32FA54C1D44F8ED6D0B1EC /* PostSettingsPanelModuleInput.swift */; };
 		CA77D42921B9C49C00DB3B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42821B9C49C00DB3B2F /* AppDelegate.swift */; };
 		CA77D42B21B9C49C00DB3B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77D42A21B9C49C00DB3B2F /* ViewController.swift */; };
 		CA77D42E21B9C49C00DB3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA77D42C21B9C49C00DB3B2F /* Main.storyboard */; };
@@ -48,14 +52,20 @@
 		CA77D45C21B9F1FB00DB3B2F /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45B21B9F1FB00DB3B2F /* source.json */; };
 		CA77D45E21BA0CB000DB3B2F /* instabook_title.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45D21BA0CB000DB3B2F /* instabook_title.png */; };
 		CA77D46021BA0FC200DB3B2F /* instabook_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CA77D45F21BA0FC200DB3B2F /* instabook_back.png */; };
+		D41C20E2F1F479648BC6FC4F /* PostSettingsPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F05442A170DF489539A079 /* PostSettingsPanelViewController.swift */; };
+		D5279BA403A9967A57953CBD /* PostSettingsPanelViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85A94042AA9E9159BC7AAB /* PostSettingsPanelViewOutput.swift */; };
 		F7CC590AB7D8268D52374CA4 /* SinglePostModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98B0217C2425B44927A15AF /* SinglePostModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A70D4B05708A40FEA205949 /* PostSettingsPanelViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelViewInput.swift; sourceTree = "<group>"; };
 		0C55C081C7A1FF21F666F53F /* Pods-instabook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instabook.debug.xcconfig"; path = "Target Support Files/Pods-instabook/Pods-instabook.debug.xcconfig"; sourceTree = "<group>"; };
 		1A9883992246293697609E3B /* Pods_instabook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instabook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E85A94042AA9E9159BC7AAB /* PostSettingsPanelViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelViewOutput.swift; sourceTree = "<group>"; };
+		2B32FA54C1D44F8ED6D0B1EC /* PostSettingsPanelModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelModuleInput.swift; sourceTree = "<group>"; };
 		2B8C3B90E0106CAD9C27C498 /* SinglePostViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostViewOutput.swift; sourceTree = "<group>"; };
 		2CA6EA139120F4D4E01183A1 /* SinglePostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostRouter.swift; sourceTree = "<group>"; };
+		54F05442A170DF489539A079 /* PostSettingsPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelViewController.swift; sourceTree = "<group>"; };
 		6816FF7523971BB7004E6F16 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		6816FF7723971E7E004E6F16 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		6831DC4023B00BA7008F450F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -70,6 +80,8 @@
 		68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		68E5C43C23A512C500EC2817 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
 		68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPresenter.swift; sourceTree = "<group>"; };
+		74E8DB59C837387650771371 /* PostSettingsPanelPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelPresenter.swift; sourceTree = "<group>"; };
+		AB250266DC047BACD4D1A026 /* PostSettingsPanelModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelModuleOutput.swift; sourceTree = "<group>"; };
 		B4214795076D0260AD5261BE /* SinglePostPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostPresenter.swift; sourceTree = "<group>"; };
 		BC7541CB3FA31C9C4A9CCDC5 /* SinglePostViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostViewInput.swift; sourceTree = "<group>"; };
 		C7C6325AB0A74B0992FCEC16 /* SinglePostModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostModuleInput.swift; sourceTree = "<group>"; };
@@ -139,6 +151,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4AA9A482EE1E5B82D8007F30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54F05442A170DF489539A079 /* PostSettingsPanelViewController.swift */,
+				0A70D4B05708A40FEA205949 /* PostSettingsPanelViewInput.swift */,
+				1E85A94042AA9E9159BC7AAB /* PostSettingsPanelViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B6E75D562660D7EAD2872F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74E8DB59C837387650771371 /* PostSettingsPanelPresenter.swift */,
+				2B32FA54C1D44F8ED6D0B1EC /* PostSettingsPanelModuleInput.swift */,
+				AB250266DC047BACD4D1A026 /* PostSettingsPanelModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		6880EDA623B002D300DA3F85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +193,7 @@
 				68CE767123B1655700D2B19A /* Base */,
 				68E5C43923A5128D00EC2817 /* Carousel */,
 				6F01B49D8CC29E190BE36763 /* SinglePost */,
+				7505A1D74F507B53FF150B07 /* PostSettingsPanel */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -228,6 +261,15 @@
 				33459C406C813177EB5D2092 /* View */,
 			);
 			path = SinglePost;
+			sourceTree = "<group>";
+		};
+		7505A1D74F507B53FF150B07 /* PostSettingsPanel */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E75D562660D7EAD2872F1 /* Presenter */,
+				4AA9A482EE1E5B82D8007F30 /* View */,
+			);
+			path = PostSettingsPanel;
 			sourceTree = "<group>";
 		};
 		8431697EF054868E91673EAA /* Router */ = {
@@ -461,6 +503,12 @@
 				0A039AED5078383F8B757293 /* SinglePostViewController.swift in Sources */,
 				136B95454431B0B0430E4C5E /* SinglePostViewInput.swift in Sources */,
 				4C31966C2673B85F4E60FBFF /* SinglePostViewOutput.swift in Sources */,
+				416ABCCB184FD8C05E2F9DCB /* PostSettingsPanelPresenter.swift in Sources */,
+				C3B0913169F84EA21181D14B /* PostSettingsPanelModuleInput.swift in Sources */,
+				9989C30B0718046E156C9525 /* PostSettingsPanelModuleOutput.swift in Sources */,
+				D41C20E2F1F479648BC6FC4F /* PostSettingsPanelViewController.swift in Sources */,
+				40C6EA1E3C64D0DCAA5E191A /* PostSettingsPanelViewInput.swift in Sources */,
+				D5279BA403A9967A57953CBD /* PostSettingsPanelViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
-final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput {
+final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput, PostSettingsPanelModuleOutput {
 
     // MARK: - Properties
 
     weak var view: SinglePostViewInput?
     var router: SinglePostRouterInput?
     var output: SinglePostModuleOutput?
+    
+    private var postPanelViewController: PostSettingsPanelViewController!
     
     var post: Post!
     // MARK: - SinglePostViewOutput
@@ -29,6 +32,17 @@ final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput {
         self.view?.setDateLabel(date.formattedDate())
     }
     
+    func getPostPanelViewController() -> UIViewController {
+        self.postPanelViewController = ServiceLocator.getPostPanelSettings(withPostPanelSettingsOutput: self)
+        return self.postPanelViewController
+    }
+    
     // MARK: - SinglePostModuleInput
+    
+    // MARK: - PostSettingsPanelModuleOutput
+    func close() {
+        router?.close()
+    }
+    
 
 }

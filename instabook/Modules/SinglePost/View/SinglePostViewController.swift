@@ -17,6 +17,7 @@ final class SinglePostViewController: UIViewController, SinglePostViewInput, Mod
     var likesLabel: UILabel!
     var imageView: UIImageView!
     var textLabel: UILabel!
+    var settingsPanel: PostSettingsPanelViewController!
     
     var output: SinglePostViewOutput?
 
@@ -87,6 +88,16 @@ final class SinglePostViewController: UIViewController, SinglePostViewInput, Mod
             make.trailing.equalTo(self.imageView)
         }
         
+        if let postSettingsPanel = self.output?.getPostPanelViewController() {
+            addChild(postSettingsPanel)
+            view.addSubview(postSettingsPanel.view)
+            postSettingsPanel.view.snp.makeConstraints { make in
+                make.bottom.equalToSuperview().offset(-(self.view.frame.size.height - Constants.Full.postWidth) / 4)
+                make.leading.equalToSuperview().offset(12.0)
+                make.trailing.equalToSuperview().offset(-12.0)
+                make.height.equalTo(44.0)
+            }
+        }
     }
 
     // MARK: - SinglePostViewInput

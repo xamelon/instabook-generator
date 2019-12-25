@@ -6,8 +6,12 @@
 //  Copyright © 2019 Instabook. All rights reserved.
 //
 
+import UIKit
+
 protocol SinglePostViewOutput {
 
     func viewDidLoad()
+    
+    func getPostPanelViewController() -> UIViewController
     
 }
