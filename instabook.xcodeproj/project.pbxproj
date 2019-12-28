@@ -26,6 +26,8 @@
 		68E5C43B23A5129A00EC2817 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */; };
 		68E5C43D23A512C500EC2817 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43C23A512C500EC2817 /* CarouselModel.swift */; };
 		68E5C43F23A512FA00EC2817 /* CarouselPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */; };
+		68FEA61C23B6B24700D9F25D /* PostSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FEA61B23B6B24700D9F25D /* PostSettings.swift */; };
+		68FEA61E23B6B35700D9F25D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FEA61D23B6B35700D9F25D /* PostView.swift */; };
 		6E4E672AF55F466C27F5E6A5 /* SinglePostRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FAB845A5B61D30685086C3 /* SinglePostRouterInput.swift */; };
 		6FE017454499139C3894C4AF /* Pods_instabook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9883992246293697609E3B /* Pods_instabook.framework */; };
 		77A909D8D7267E94AE73070F /* SinglePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4214795076D0260AD5261BE /* SinglePostPresenter.swift */; };
@@ -80,6 +82,8 @@
 		68E5C43A23A5129A00EC2817 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		68E5C43C23A512C500EC2817 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
 		68E5C43E23A512FA00EC2817 /* CarouselPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPresenter.swift; sourceTree = "<group>"; };
+		68FEA61B23B6B24700D9F25D /* PostSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSettings.swift; sourceTree = "<group>"; };
+		68FEA61D23B6B35700D9F25D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		74E8DB59C837387650771371 /* PostSettingsPanelPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelPresenter.swift; sourceTree = "<group>"; };
 		AB250266DC047BACD4D1A026 /* PostSettingsPanelModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostSettingsPanelModuleOutput.swift; sourceTree = "<group>"; };
 		B4214795076D0260AD5261BE /* SinglePostPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePostPresenter.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				68AF33612395C9B60007BE65 /* Post.swift */,
+				68FEA61B23B6B24700D9F25D /* PostSettings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				68CE767223B1657800D2B19A /* ModuleTransitionable.swift */,
+				68FEA61D23B6B35700D9F25D /* PostView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -482,11 +488,13 @@
 				68AF33622395C9B60007BE65 /* Post.swift in Sources */,
 				68CE767323B1657800D2B19A /* ModuleTransitionable.swift in Sources */,
 				68E5C43523A5106500EC2817 /* ApiClient.swift in Sources */,
+				68FEA61C23B6B24700D9F25D /* PostSettings.swift in Sources */,
 				68CE767023B158AC00D2B19A /* ServiceLocator.swift in Sources */,
 				68E5C43823A5112600EC2817 /* ApiClientMock.swift in Sources */,
 				68E5C43D23A512C500EC2817 /* CarouselModel.swift in Sources */,
 				6832B78623B0144600F49FAC /* Date+Extensions.swift in Sources */,
 				68E5C43F23A512FA00EC2817 /* CarouselPresenter.swift in Sources */,
+				68FEA61E23B6B35700D9F25D /* PostView.swift in Sources */,
 				CA77D43B21B9C4BB00DB3B2F /* PageCreator.swift in Sources */,
 				6831DC4123B00BA7008F450F /* Constants.swift in Sources */,
 				6816FF7823971E7E004E6F16 /* String+Extensions.swift in Sources */,

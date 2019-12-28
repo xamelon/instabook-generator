@@ -9,5 +9,7 @@
 protocol PostSettingsPanelModuleOutput: class {
     
     func close()
-    
+    func calendarSettingChange()
+    func likesSettingChange()
+    func textSettingChange()
 }

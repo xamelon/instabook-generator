@@ -16,8 +16,14 @@ final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput, Po
     weak var view: SinglePostViewInput?
     var router: SinglePostRouterInput?
     var output: SinglePostModuleOutput?
+    weak var settingsViewInput: PostSettingsPanelViewInput?
     
     private var postPanelViewController: PostSettingsPanelViewController!
+    
+    init() {
+        self.postPanelViewController = ServiceLocator.getPostPanelSettings(withPostPanelSettingsOutput: self)
+        self.settingsViewInput = postPanelViewController
+    }
     
     var post: Post!
     // MARK: - SinglePostViewOutput
@@ -30,10 +36,17 @@ final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput, Po
         self.view?.setTextLabel(post.text)
         let date = Date(timeIntervalSince1970: post.timestamp)
         self.view?.setDateLabel(date.formattedDate())
+        if var postView = view as? PostView {
+            postView.applyPostSettings(post.postSettings)
+            settingsViewInput?.setTextIsHidden(post.postSettings.textIsHidden)
+            settingsViewInput?.setDateIsHidden(post.postSettings.dateIsHidden)
+            settingsViewInput?.setLikesIsHidden(post.postSettings.likesIsHidden)
+        }
+        
     }
     
     func getPostPanelViewController() -> UIViewController {
-        self.postPanelViewController = ServiceLocator.getPostPanelSettings(withPostPanelSettingsOutput: self)
+        
         return self.postPanelViewController
     }
     
@@ -42,6 +55,30 @@ final class SinglePostPresenter: SinglePostViewOutput, SinglePostModuleInput, Po
     // MARK: - PostSettingsPanelModuleOutput
     func close() {
         router?.close()
+    }
+    
+    func likesSettingChange() {
+        self.post.postSettings.likesIsHidden = !self.post.postSettings.likesIsHidden
+        self.reload()
+    }
+    
+    func calendarSettingChange() {
+        self.post.postSettings.dateIsHidden = !self.post.postSettings.dateIsHidden
+        self.reload()
+    }
+    
+    func textSettingChange() {
+        self.post.postSettings.textIsHidden = !self.post.postSettings.textIsHidden
+        self.reload()
+    }
+    
+    private func reload() {
+        if var postView = view as? PostView {
+            postView.applyPostSettings(post.postSettings)
+        }
+        self.settingsViewInput?.setDateIsHidden(post.postSettings.dateIsHidden)
+        self.settingsViewInput?.setLikesIsHidden(post.postSettings.likesIsHidden)
+        self.settingsViewInput?.setTextIsHidden(post.postSettings.textIsHidden)
     }
     
 

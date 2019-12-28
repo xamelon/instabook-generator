@@ -115,7 +115,7 @@ extension CarouselViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCollectionViewCell.reuseIdentifier(), for: indexPath)
         
-        guard let userCell = cell as? PageCollectionViewCell,
+        guard var userCell = cell as? PageCollectionViewCell,
             let post = self.presenter.getPost(atIndex: indexPath.item),
             let imageURL = post.imageURL else {
             return cell
@@ -126,6 +126,7 @@ extension CarouselViewController : UICollectionViewDataSource {
         userCell.textView.text = post.text
         userCell.dateLabel.text = date.formattedDate()
         Nuke.loadImage(with: imageURL, into: userCell.imageView)
+        userCell.applyPostSettings(post.postSettings)
         
         return userCell
     }

@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class PageCollectionViewCell: UICollectionViewCell {
+class PageCollectionViewCell: UICollectionViewCell, PostView {
 
     var dateLabel: UILabel
     var likesLabel: UILabel
@@ -82,5 +82,33 @@ class PageCollectionViewCell: UICollectionViewCell {
     
     static func reuseIdentifier() -> String {
         return "PageCollectionViewCell"
+    }
+    
+    // MARK: - PostView
+    var textIsHidden: Bool {
+        set {
+            self.textView.isHidden = newValue
+        }
+        get {
+            return self.textView.isHidden
+        }
+    }
+    
+    var likesIsHidden: Bool {
+        set {
+            self.likesLabel.isHidden = newValue
+        }
+        get {
+            return self.textView.isHidden
+        }
+    }
+    
+    var dateIsHidden: Bool {
+        set {
+            self.dateLabel.isHidden = newValue
+        }
+        get {
+            return self.dateLabel.isHidden
+        }
     }
 }

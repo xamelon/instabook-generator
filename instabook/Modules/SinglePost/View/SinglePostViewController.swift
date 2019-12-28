@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Nuke
 
-final class SinglePostViewController: UIViewController, SinglePostViewInput, ModuleTransitionable {
+final class SinglePostViewController: UIViewController, SinglePostViewInput, ModuleTransitionable, PostView {
 
     // MARK: - Properties
     var dateLabel: UILabel!
@@ -122,6 +122,34 @@ final class SinglePostViewController: UIViewController, SinglePostViewInput, Mod
             return
         }
         Nuke.loadImage(with: url, into: self.imageView)
+    }
+    
+    // MARK: - PostView
+    var textIsHidden: Bool {
+        set {
+            self.textLabel.isHidden = newValue
+        }
+        get {
+            return self.textLabel.isHidden
+        }
+    }
+    
+    var likesIsHidden: Bool {
+        set {
+            self.likesLabel.isHidden = newValue
+        }
+        get {
+            return self.likesLabel.isHidden
+        }
+    }
+    
+    var dateIsHidden: Bool {
+        set {
+            self.dateLabel.isHidden = newValue
+        }
+        get {
+            return self.dateLabel.isHidden
+        }
     }
 
 }

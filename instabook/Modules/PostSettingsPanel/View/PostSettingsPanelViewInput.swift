@@ -8,4 +8,8 @@
 
 protocol PostSettingsPanelViewInput: class {
 
+    func setDateIsHidden(_ isHidden: Bool)
+    func setTextIsHidden(_ isHidden: Bool)
+    func setLikesIsHidden(_ isHidden: Bool)
+    
 }

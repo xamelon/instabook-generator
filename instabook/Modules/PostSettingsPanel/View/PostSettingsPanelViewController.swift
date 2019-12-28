@@ -18,6 +18,8 @@ final class PostSettingsPanelViewController: UIViewController, PostSettingsPanel
     
     var closeButton: UIButton!
     var textButton: UIButton!
+    var dateButton: UIButton!
+    var likesButton: UIButton!
 
     // MARK: - UIViewController
 
@@ -43,13 +45,22 @@ final class PostSettingsPanelViewController: UIViewController, PostSettingsPanel
         
         
         textButton = UIButton()
-        textButton.setTitle("T", for: .normal)
-        textButton.setTitleColor(UIColor.white, for: .normal)
+        textButton.setImage(Constants.Full.Images.textDisable, for: .normal)
+        textButton.addTarget(self, action: #selector(textButtonDidTap), for: .touchUpInside)
         stackView.addArrangedSubview(textButton)
         
+        likesButton = UIButton()
+        likesButton.setImage(Constants.Full.Images.likesDisable, for: .normal)
+        likesButton.addTarget(self, action: #selector(likesButtonDidTap), for: .touchUpInside)
+        stackView.addArrangedSubview(likesButton)
+        
+        dateButton = UIButton()
+        dateButton.setImage(Constants.Full.Images.calendarDisable, for: .normal)
+        dateButton.addTarget(self, action: #selector(calendarButtonDidTap), for: .touchUpInside)
+        stackView.addArrangedSubview(dateButton)
+        
         closeButton = UIButton()
-        closeButton.setTitle("X", for: .normal)
-        closeButton.setTitleColor(UIColor.white, for: .normal)
+        closeButton.setImage(Constants.Common.Images.close, for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonDidTap), for: .touchUpInside)
         stackView.addArrangedSubview(closeButton)
         
@@ -61,9 +72,47 @@ final class PostSettingsPanelViewController: UIViewController, PostSettingsPanel
     }
     
     
-    // MARK: - PostSettingsPanelViewInput
+    // MARK: - Selectors
     @objc func closeButtonDidTap() {
         output?.close()
     }
+    
+    @objc func textButtonDidTap() {
+        self.output?.textButtonDidTap()
+    }
+    
+    @objc func likesButtonDidTap() {
+        self.output?.likesButtonDidTap()
+    }
+    
+    @objc func calendarButtonDidTap() {
+        self.output?.calendarButtonDidTap()
+    }
+    
+    // MARK: - PostSettingsPanelViewInput
+    func setDateIsHidden(_ isHidden: Bool) {
+        if isHidden {
+            self.dateButton.setImage(Constants.Full.Images.calendarEnable, for: .normal)
+        } else {
+            self.dateButton.setImage(Constants.Full.Images.calendarDisable, for: .normal)
+        }
+    }
+    
+    func setLikesIsHidden(_ isHidden: Bool) {
+        if isHidden {
+            self.likesButton.setImage(Constants.Full.Images.likesEnable, for: .normal)
+        } else {
+            self.likesButton.setImage(Constants.Full.Images.likesDisable, for: .normal)
+        }
+    }
+    
+    func setTextIsHidden(_ isHidden: Bool) {
+        if isHidden {
+            self.textButton.setImage(Constants.Full.Images.textEnable, for: .normal)
+        } else {
+            self.textButton.setImage(Constants.Full.Images.textDisable, for: .normal)
+        }
+    }
+    
 
 }

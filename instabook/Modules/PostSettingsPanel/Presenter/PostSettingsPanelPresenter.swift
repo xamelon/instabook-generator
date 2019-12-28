@@ -18,6 +18,18 @@ final class PostSettingsPanelPresenter: PostSettingsPanelViewOutput, PostSetting
         output?.close()
     }
     
+    func textButtonDidTap() {
+        output?.textSettingChange()
+    }
+    
+    func calendarButtonDidTap() {
+        output?.calendarSettingChange()
+    }
+    
+    func likesButtonDidTap() {
+        output?.likesSettingChange()
+    }
+    
 
     // MARK: - PostSettingsPanelModuleInput
 

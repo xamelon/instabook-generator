@@ -9,5 +9,8 @@
 protocol PostSettingsPanelViewOutput {
 
     func close()
+    func likesButtonDidTap()
+    func calendarButtonDidTap()
+    func textButtonDidTap()
     
 }

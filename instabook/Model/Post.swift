@@ -14,6 +14,7 @@ struct Post {
     let likes: Int
     let text: String
     let imageURL: URL?
+    let postSettings: PostSettings = PostSettings.defaultSettings()
     
     enum CodingKeys: String, CodingKey {
         case timestamp = "Date"
