@@ -93,11 +93,12 @@ class CarouselViewController: UIViewController, CarouselViewInput, ModuleTransit
     
     // MARK: - Selectors
     @objc func tapOnEdit() {
-        guard let selectedIndexPath = self.collectionView.indexPathForItem(at: self.view.center) else {
-            return
+        let rect = CGRect(origin: collectionView.contentOffset, size: collectionView.frame.size)
+        let point = CGPoint(x: rect.midX, y: rect.midY)
+        if let indexPath = self.collectionView.indexPathForItem(at: point) {
+            self.presenter.showPost(atIndex: indexPath.item)
         }
         
-        self.presenter.showPost(atIndex: selectedIndexPath.item)
     }
     
 }
